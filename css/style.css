@@ -389,7 +389,7 @@ body {
 .da-container {
   max-width: 1215px;
   margin: 0 auto;
-  padding-bottom: 945px;
+  /*padding-bottom: 945px;*/
 
 }
 .da-header {
@@ -465,7 +465,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  margin: auto;
+  margin:  auto;
   width: 560px;
   height: 615px;
   background: rgba(20, 20, 20, 0.6);
