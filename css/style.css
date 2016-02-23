@@ -383,12 +383,14 @@ li {
 body {
   font: 400 14px/1 helvetica, Arial, sans-serif;
   color: #ffffff;
+  background: url(../img/background.jpg) no-repeat;
+  background-size: cover;
 }
 .da-container {
   max-width: 1215px;
   margin: 0 auto;
   padding-bottom: 945px;
-  background: url(../img/background.jpg) no-repeat;
+
 }
 .da-header {
   background: #085596 url(../img/heder-bg.png);
@@ -458,8 +460,6 @@ body {
 }
 
 .da-modal {
-  /*margin: 0 auto;
-  margin-top: 200px;*/
   position: absolute;
   top: 0;
   left: 0;
@@ -480,16 +480,51 @@ body {
   padding: 18px 0;
 }
 .da-modal__facebook {
-  border: 1px solid #354d8b;
-  border-radius: 5px;
-  padding: 0;
-  margin: 30px 0 10px;
-  position: relative;
+  margin-top: 40px;
 }
+.da-modal__facebook a {
+    position: relative;
+    display: block;
+    padding: 9px 55px 10px 70px;
+    margin: 0 auto;
+    width: 276px;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(to top, #314174, #3e5692);
+    border-top: 1px solid #7787b8;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.da-modal__facebook a:before {
+    content: "";
+    height: 33px;
+    border-left: 1px solid #1f3c76;
+    border-right: 1px solid #4d65a3;
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
+.da-modal__facebook a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: url(../img/strelka.png) no-repeat;
+    top: 9px;
+    left: 235px;
+}
+.with {
+    font-weight: normal;
+    }
 .da-modal__facebook img {
-  display: block;
+    position: absolute;
+    top: 6px;
+    left: 17px;
 }
 .da-modal__line {
+  margin-top: 30px;
   color: #999999;
   font-size: 14px;
   position: relative;
@@ -519,7 +554,7 @@ body {
 .da-modal__form {
   color: #cccccc;
   font-size: 14px;
-  padding: 15px 10px;
+  padding: 10px 10px;
 }
 .da-modal__form input[type="text"],
 .da-modal__form input[type="email"],
